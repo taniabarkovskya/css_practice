@@ -12,4 +12,4 @@ Stwórz stronę **Most paid athletes** według [naszego dizajnu](https://www.fig
   - zmiany po lewej stronie mockupu powinny zostać zastosowane natychmiast;
   - te po prawej natomiast - łagodnie, w ciągu jednej sekundy.
 
-Jeśli zaprojektowanie opisu sportowca tak, by ukazywało się ono po najechaniu **bez przesuwania sąsiednich elementów** jest dla Ciebie za trudne, zacznij od pokazywania go&nbsp;jeszcze na starcie. Gdy poradzisz sobie z implementacją opisu w ten sposób, spróbuj ograniczyć jego widoczność do hover. W efekcie, początkowe wcięcia nie ulegną zmianie.
+Jeśli zaprojektowanie opisu person__extra--sportowca tak, by ukazywało się ono po najechaniu **bez przesuwania sąsiednich elementów** jest dla Ciebie za trudne, zacznij od pokazywania go&nbsp;jeszcze na starcie. Gdy poradzisz sobie z implementacją opisu w ten sposób, spróbuj ograniczyć jego widoczność do hover. W efekcie, początkowe wcięcia nie ulegną zmianie.
