@@ -1,0 +1,109 @@
+.people{
+  box-sizing: border-box;
+  padding: 30px 35px;
+  margin: 0 auto;
+
+  display: grid;
+  gap: 40px 30px;
+  justify-content: center;
+  align-items: center;
+
+  @include columns-count(2);
+
+  @include on-larger-screen{
+    @include columns-count(4);
+  }
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 115%; /* 20.7/18 */
+}
+
+.person{
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+
+  text-align: center;
+
+  transition: transform 1s;
+
+  &__photo{
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    overflow: hidden;
+
+    border-radius: 100px;
+
+    margin-bottom: 8px;
+
+    transition: all 1s;
+
+
+    &-img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+
+    &-rank{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 16px;
+      font-weight: 700;
+
+      width: 32px;
+      height: 32px;
+      background-color: $rank-background-color;
+      color: $rank-color;
+      border-radius: 100%;
+
+      position: absolute;
+      right: 10px;
+      top: 84px;
+      z-index: 1;
+    }
+  }
+
+  &__name{
+    color: $main-color;
+    font-weight: 700;
+  }
+
+  &__extra{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    text-align: center;
+    visibility: hidden;
+    z-index: 5;
+    font-size: 21.6px;
+
+    // display: none;
+  }
+
+  &:hover{
+    background-color: $hover-background-color;
+
+    transform: scale(1.2);
+
+    .person__photo{
+      transform: scale(0.9);
+      border-radius: 60px;
+    }
+
+    .person__extra{
+      background-color: $hover-background-color;
+      visibility: visible;
+      // display: block;
+    }
+  }
+}
